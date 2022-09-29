@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculaPit</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .fundo{
+            background-image: linear-gradient(60deg,pink, white);
+            height: 100vh;
+            color: black;
+            font-family: serif;
+            text-align: center;
+        }
+        #assinatura{
+            text-align: right;
+            color:black;
+            font-size: small;
+        }
+        .botao{
+            width: 90px;
+            height: 50px;
+            margin: 3px;
+            font-size: large;
+            font-family: serif;
+            cursor: pointer;
+            background-color: rgb(240, 176, 176);
+            border: none;
+            color: black;
+        }
+        #resp{
+            font-size: large;
+        }
+        .resultado{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo">
+        <p id="assinatura">Feito por Maria Eduarda de Oliveira Almeida</p>
+        <div>
+            <h1>Relações trigonométricas no triângulo retângulo:</h1>
+            <br>
+        </div>
+        <form>
+            <fieldset>
+                <br>
+                <p id="subtitle">Insira apenas 2 valores:</p>
+                <br>
+                <div>
+                    <label>Valor da Hipotenusa:</label>
+                    <input type="number" name="hipotenusa" id="hip">
+                </div>
+                <br>
+                <div>
+                    <label>Valor do Cateto 1: &nbsp;&nbsp;&nbsp;</label>
+                    <input type="number" name="cateto1" id="cat1">
+                </div>
+                <br>
+                <div>
+                    <label>Valor do Cateto 2: &nbsp;&nbsp;&nbsp;</label>
+                    <input type="number" name="cateto2" id="cat2">
+                </div> 
+                <br><br>
+                <div>
+                    <td><button class="botao">Calcular</button></td>
+                </div> 
+                <br>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <br>
+                <h1 id="resp">Resultado</h1>
+                <br>
+                <div class="resultado">
+                    <div>
+                        <label>Hipotenusa:</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Cateto 1:</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Cateto 2:</label>
+                    </div> 
+                    <br>
+                </div>
+                </fieldset>
+        </form>      
+</body>
+</html>
