@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculaPit</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .fundo{
+            background-image: linear-gradient(60deg,pink, white);
+            height: 100vh;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        #assinatura{
+            text-align: right;
+            color:black;
+            font-size: small;
+        }
+        .botao{
+            width: 90px;
+            height: 50px;
+            margin: 3px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            background-color: rgb(240, 176, 176);
+            border: none;
+            color: black;
+        }
+        #resp{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo">
+        <p id="assinatura">Feito por Maria Eduarda de Oliveira Almeida</p>
+        <div>
+            <h1>Relações trigonométricas no triângulo retângulo:</h1>
+            <br>
+        </div>
+            <fieldset>
+                <br>
+                <p id="subtitle">Insira apenas 2 valores:</p>
+                <br>
+                <div>
+                    <label>Valor da Hipotenusa:</label>
+                    <input disabled="disabled" name="hipotenusa" id="hip">
+                </div>
+                <br>
+                <div>
+                    <label>Valor do Cateto 1: &nbsp;&nbsp;&nbsp;</label>
+                    <input name="cateto1" id="cat1">
+                </div>
+                <br>
+                <div>
+                    <label>Valor do Cateto 2: &nbsp;&nbsp;&nbsp;</label>
+                    <input name="cateto2" id="cat2">
+                </div> 
+                <br><br>
+                <div>
+                    <td><button class="botao" onclick="calcular()">Calcular</button></td>
+                </div> 
+                <br>
+            </fieldset>
+        <script>
+            function calcular() 
+            {   
+                var c1 = document.querySelector("#cat1");
+                var c2 = document.querySelector("#cat2");
+                var hip = document.querySelector("#hip");
+                c1 = c1.value;
+                c2 = c2.value; 
+                hip.value = Math.hypot(c1,c2).toFixed(2);
+            }
+        </script>      
+</body>
+</html>
